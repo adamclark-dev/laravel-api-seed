@@ -18,5 +18,4 @@ class AuthenticationController extends BaseController
 
     }
 
-
 }

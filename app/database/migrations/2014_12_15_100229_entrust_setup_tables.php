@@ -17,6 +17,7 @@ class EntrustSetupTables extends Migration
             $table->increments('id')->unsigned();
             $table->string('name')->unique();
             $table->timestamps();
+            $table->softDeletes();
         });
 
         // Creates the assigned_roles (Many-to-Many relation) table
@@ -27,6 +28,8 @@ class EntrustSetupTables extends Migration
             $table->foreign('user_id')->references('id')->on('users')
                 ->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('role_id')->references('id')->on('roles');
+            $table->timestamps();
+            $table->softDeletes();
         });
 
         // Creates the permissions table
@@ -35,6 +38,7 @@ class EntrustSetupTables extends Migration
             $table->string('name')->unique();
             $table->string('display_name');
             $table->timestamps();
+            $table->softDeletes();
         });
 
         // Creates the permission_role (Many-to-Many relation) table
@@ -44,6 +48,8 @@ class EntrustSetupTables extends Migration
             $table->integer('role_id')->unsigned();
             $table->foreign('permission_id')->references('id')->on('permissions'); // assumes a users table
             $table->foreign('role_id')->references('id')->on('roles');
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 

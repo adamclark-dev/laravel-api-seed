@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
-use Zizaco\Entrust\EntrustRole;
 
-class Role extends EntrustRole
+class PermissionToRole extends Eloquent
 {
 
     use SoftDeletingTrait;
+
+    protected $table = 'permission_role';
 
 }

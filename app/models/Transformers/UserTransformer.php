@@ -8,6 +8,8 @@ class UserTransformer extends \League\Fractal\TransformerAbstract
 
         $response = [];
         $response['id'] = intval($user->id);
+        $response['firstname'] = $user->firstname;
+        $response['surname'] = $user->surname;
         $response['email'] = $user->email;
 
         if($user->hasRole('Admin')){
