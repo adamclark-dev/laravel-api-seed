@@ -1,25 +1,37 @@
-## Laravel PHP Framework
+## Laravel API Seed
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This is a laravel based API with authentication that intergrates roles and permissions.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+This combines the following packages,
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+- [barryvadh/laravel-cors](https://github.com/barryvdh/laravel-cors) - Allow cross origin requests
+- [Dingo/Api](https://github.com/dingo/api) - API responses
+- [thephpleague/fractal](https://github.com/thephpleague/fractal) - Transformation Layer
+- [tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth) - JSON Web Tokens (Authentication)
+- [Zizaco/Entrust](https://github.com/Zizaco/entrust) - User Roles and Permissions
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Installation 
 
-## Official Documentation
+### Prerequisites
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+You need git to clone the laravel-api-seed repository.
 
-### Contributing To Laravel
+The app uses php and composer, both must be installed for you to continue
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+### Clone the repository into your working directory
 
-### License
+```bash
+git --depth=1 clone https://github.com/adamclark-dev/laravel-api-seed.git .
+```
+### Setup the database
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Create a mysql database. The go to the app/config/database.php and change the mysql database settings to reflect your setup.
+
+### Create Database tables
+
+```bash
+php artisan migrate
+```
+## License
+
+This package is licensed under the [BSD 3-Clause license](http://opensource.org/licenses/BSD-3-Clause).
