@@ -32,3 +32,6 @@ Create a mysql database. The go to the app/config/database.php and change the my
 ```bash
 php artisan migrate
 ```
+## License
+
+This package is licensed under the [BSD 3-Clause license](http://opensource.org/licenses/BSD-3-Clause).
