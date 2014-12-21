@@ -12,7 +12,7 @@ class UserTransformer extends \League\Fractal\TransformerAbstract
         $response['surname'] = $user->surname;
         $response['email'] = $user->email;
 
-        if($user->hasRole('Admin')){
+        if($user->hasRole('admin')){
 
             $response['admin'] = true;
 

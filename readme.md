@@ -9,6 +9,7 @@ This combines the following packages,
 - [thephpleague/fractal](https://github.com/thephpleague/fractal) - Transformation Layer
 - [tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth) - JSON Web Tokens (Authentication)
 - [Zizaco/Entrust](https://github.com/Zizaco/entrust) - User Roles and Permissions
+- [dwightwatson/validating](https://github.com/dwightwatson/validating/tree/0.10) - Model Validation
 
 ## Installation 
 

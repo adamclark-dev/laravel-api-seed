@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
+use Watson\Validating\ValidatingTrait;
 
 class PermissionToRole extends Eloquent
 {
 
-    use SoftDeletingTrait;
+    use SoftDeletingTrait, ValidatingTrait;
 
     protected $table = 'permission_role';
 

@@ -10,7 +10,8 @@
         "gathercontent/laravel-fractal": "~0.1",
 		"barryvdh/laravel-cors": "0.2.x",
         "tymon/jwt-auth": "0.3.*",
-        "zizaco/entrust": "1.2.*@dev"
+        "zizaco/entrust": "1.2.*@dev",
+        "watson/validating": "0.10.*"
 	},
 	"autoload": {
 		"classmap": [

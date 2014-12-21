@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "27c6821729f69389ef490a8c4c7dbe49",
+    "hash": "e785c89ede59cdca53f6d3fef96cfe3a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -479,16 +479,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v4.2.12",
+            "version": "v4.2.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "70a60f2ff9b96b3fcd88a68ef5382557733fe671"
+                "reference": "a8104d53fef0582a8e93b33f424eafd4bd5c7989"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/70a60f2ff9b96b3fcd88a68ef5382557733fe671",
-                "reference": "70a60f2ff9b96b3fcd88a68ef5382557733fe671",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a8104d53fef0582a8e93b33f424eafd4bd5c7989",
+                "reference": "a8104d53fef0582a8e93b33f424eafd4bd5c7989",
                 "shasum": ""
             },
             "require": {
@@ -590,7 +590,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-11 17:14:36"
+            "time": "2014-12-21 20:31:14"
         },
         {
             "name": "laravelbook/ardent",
@@ -2037,6 +2037,55 @@
             ],
             "description": "JSON Web Token Authentication for Laravel",
             "time": "2014-12-05 09:39:26"
+        },
+        {
+            "name": "watson/validating",
+            "version": "0.10.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dwightwatson/validating.git",
+                "reference": "673b165b4391942a7fae1e85a84f21b5f367f33f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dwightwatson/validating/zipball/673b165b4391942a7fae1e85a84f21b5f367f33f",
+                "reference": "673b165b4391942a7fae1e85a84f21b5f367f33f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~4.2.6",
+                "illuminate/events": "~4.2.6",
+                "illuminate/support": "~4.2.6",
+                "illuminate/validation": "~4.2.6",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Watson\\Validating\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dwight Watson",
+                    "email": "dwight@studiousapp.com"
+                }
+            ],
+            "description": "Eloquent model validating trait.",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "validation"
+            ],
+            "time": "2014-11-20 02:09:08"
         },
         {
             "name": "zizaco/entrust",
